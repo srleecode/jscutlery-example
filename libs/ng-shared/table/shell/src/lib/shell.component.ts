@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, NgModule } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon';
 
 export interface PeriodicElement {
   name: string;
@@ -34,7 +35,7 @@ export class ShellComponent {
 
 @NgModule({
   declarations: [ShellComponent],
-  imports: [CommonModule, MatTableModule],
+  imports: [CommonModule, MatTableModule, MatIconModule],
   exports: [ShellComponent],
 })
 export class NgSharedTableShellModule {}

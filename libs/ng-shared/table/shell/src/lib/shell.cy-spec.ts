@@ -17,6 +17,7 @@ describe('ShellComponent', () => {
         NgSharedTableShellModule,
         ...GLOBAL_MOUNT_OPTIONS.imports,
       ],
+      stylesheet: 'https://fonts.googleapis.com/icon?family=Material+Icons',
     });
   });
 

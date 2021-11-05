@@ -8,7 +8,10 @@ describe('ShellComponent', () => {
   const harness = getHarness(MatIconHarness);
 
   beforeEach(() => {
-    mountStory(Default, { ...GLOBAL_MOUNT_STYLE_OPTIONS });
+    mountStory(Default, {
+      ...GLOBAL_MOUNT_STYLE_OPTIONS,
+      stylesheet: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+    });
   });
 
   it('should have home icon', () => {
