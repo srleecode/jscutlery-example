@@ -14,7 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@cypress/component-testing": [".component-testing/index.ts"],
+      "@jscutlery-example/ng-shared/icon/shell": [
+        "libs/ng-shared/icon/shell/src/index.ts"
+      ],
+      "@jscutlery-example/ng-shared/table/shell": [
+        "libs/ng-shared/table/shell/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

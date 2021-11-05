@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "root": "libs/ng-shared/icon/shell",
+  "sourceRoot": "libs/ng-shared/icon/shell/src",
+  "prefix": "ng-shared",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/ng-shared/icon/shell"
+      ],
+      "options": {
+        "jestConfig": "libs/ng-shared/icon/shell/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ng-shared/icon/shell/src/**/*.ts",
+          "libs/ng-shared/icon/shell/src/**/*.html"
+        ]
+      }
+    },
+    "ct": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "libs/ng-shared/icon/shell/cypress.json",
+        "tsConfig": "libs/ng-shared/icon/shell/tsconfig.cypress.json",
+        "devServerTarget": "",
+        "testingType": "component"
+      }
+    }
+  },
+  "tags": [
+    "app:ng-shared",
+    "scope:ng-shared-icon",
+    "type:shell"
+  ]
+}

@@ -5,6 +5,8 @@
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
+    "mount-test": "npx nx run ng-shared-table-shell:ct --testingType=component",
+    "mount-story-test": "npx nx run ng-shared-icon-shell:ct --testingType=component",
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test"
@@ -12,10 +14,12 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^12.2.0",
+    "@angular/cdk": "^13.0.0",
     "@angular/common": "^12.2.0",
     "@angular/compiler": "^12.2.0",
     "@angular/core": "^12.2.0",
     "@angular/forms": "^12.2.0",
+    "@angular/material": "12.2.6",
     "@angular/platform-browser": "^12.2.0",
     "@angular/platform-browser-dynamic": "^12.2.0",
     "@angular/router": "^12.2.0",

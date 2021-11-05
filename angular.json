@@ -1,6 +1,8 @@
 {
   "version": 2,
   "projects": {
-    "jscutlery-example": "apps/jscutlery-example"
+    "jscutlery-example": "apps/jscutlery-example",
+    "ng-shared-icon-shell": "libs/ng-shared/icon/shell",
+    "ng-shared-table-shell": "libs/ng-shared/table/shell"
   }
 }
