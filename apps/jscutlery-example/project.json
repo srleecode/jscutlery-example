@@ -6,9 +6,7 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/jscutlery-example",
         "index": "apps/jscutlery-example/src/index.html",
@@ -24,6 +22,9 @@
           "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
           "apps/jscutlery-example/src/styles.scss"
         ],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/ng-shared/styles"]
+        },
         "scripts": []
       },
       "configurations": {
@@ -88,9 +89,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/apps/jscutlery-example"
-      ],
+      "outputs": ["coverage/apps/jscutlery-example"],
       "options": {
         "jestConfig": "apps/jscutlery-example/jest.config.js",
         "passWithNoTests": true
